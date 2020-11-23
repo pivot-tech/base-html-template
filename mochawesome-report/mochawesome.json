@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-23T03:23:57.019Z",
+    "end": "2020-11-23T03:23:57.232Z",
+    "duration": 213,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "27d5ff31-6e7b-4790-a403-8cb67cd3f2dd",
+      "title": "",
+      "fullFile": "cypress/integration/myFirstWebsite..js",
+      "file": "cypress/integration/myFirstWebsite..js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "734f99ad-4990-4a0c-8682-fc19375423a7",
+          "title": "My First Website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "has the correct title",
+              "fullTitle": "My First Website has the correct title",
+              "timedOut": null,
+              "duration": 98,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should(\"eq\", \"My First Website\");",
+              "err": {},
+              "uuid": "9d811d0e-f8ba-4486-bcab-a7eb4f33667a",
+              "parentUUID": "734f99ad-4990-4a0c-8682-fc19375423a7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "124acc6d-9b80-424d-9035-d4ea7491b251",
+              "title": "The site-contents",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "has an h2",
+                  "fullTitle": "My First Website The site-contents has an h2",
+                  "timedOut": null,
+                  "duration": 52,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\"h2\").should(\"exist\");",
+                  "err": {},
+                  "uuid": "3b0fc545-6e76-4bd2-8a5e-d85203dcb847",
+                  "parentUUID": "124acc6d-9b80-424d-9035-d4ea7491b251",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "has the text, 'Hello World'",
+                  "fullTitle": "My First Website The site-contents has the text, 'Hello World'",
+                  "timedOut": null,
+                  "duration": 44,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\"h2\").contains(\"Hello World!\");",
+                  "err": {},
+                  "uuid": "f80ac4ca-4192-4d9b-8b04-197465119c3e",
+                  "parentUUID": "124acc6d-9b80-424d-9035-d4ea7491b251",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "3b0fc545-6e76-4bd2-8a5e-d85203dcb847",
+                "f80ac4ca-4192-4d9b-8b04-197465119c3e"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 96,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "9d811d0e-f8ba-4486-bcab-a7eb4f33667a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 98,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "base-html-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pivot-tech/base-html-template.git"
+  },
+  "author": "Warren Sadler <42621284+warren-sadler@users.noreply.github.com>",
+  "license": "MIT",
+  "description": "This repo serves as a sensible and gradable HTML project template.",
+  "bugs": {
+    "url": "https://github.com/pivot-tech/base-html-template/issues"
+  },
+  "homepage": "https://github.com/pivot-tech/base-html-template#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precy:run": "rm -rf mochawesome-report/",
+    "cy:run": "cypress run"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "cypress": "^5.6.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}
