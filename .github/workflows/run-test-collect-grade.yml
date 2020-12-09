@@ -1,0 +1,17 @@
+name: run-tests-and-collect-grade
+on: [push]
+jobs:
+  run-tests-and-collect-grade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - name: Run Cypress Test
+        run: yarn cy:run
+      - name: Capture Grading Report and Publish Results
+        uses: pivot-tech/grading-action@v1
+        with:
+            adminEndpointURL: 'https://czxxcf90z1.execute-api.us-east-2.amazonaws.com/dev/'
+            coverageReportPath: './mochawesome-report/mochawesome.json'
+
+
